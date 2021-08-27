@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown link
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+              <a href="{{url_for('logout')}}">press me to log out</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+      <h1>Departure</h1>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="">Latitude</span>
+        </div>
+        <input type="text" class=".col-sm">°
+        <input type="text" class=".col-sm">'
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <button type="button" class="N">North</button>
+            <button type="button" class="S">South</button>
+          </div>
+      </div>
+
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="">Longitude</span>
+        </div>
+        <input type="text" class=".col-sm">°
+        <input type="text" class=".col-sm">'
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <button type="button" class="N">North</button>
+            <button type="button" class="S">South</button>
+          </div>
+      </div>
+
+      <h1>Arrival</h1>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="">Latitude</span>
+        </div>
+        <input type="text" class=".col-sm">°
+        <input type="text" class=".col-sm">'
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+        <button type="button" class="N">North</button>
+        <button type="button" class="S">South</button>
+      </div>
+      </div>
+
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="">Longitude</span>
+        </div>
+        <input type="text" class=".col-sm">°
+        <input type="text" class=".col-sm">'
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <button type="button" class="N">North</button>
+            <button type="button" class="S">South</button>
+          </div>
+      </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
